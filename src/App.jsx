@@ -6,104 +6,87 @@ const letters = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
 const questions = [
     {
-        t: "Jak můžeš být prospěšnej pro team?", sq: [
-            "Myslím, že dokážu rychle rozpoznat a využít výhody nových možností",
-            "Dokáži dobře spolupracovat s různými lidmi",
-            "Jsem nápaditý",
-            "Umím povzbudit ostatní, kdykoli si všimnu, že mohou nabídnout něco\n" +
-            "cenné",
-            "Mám schopnost dotahovat věci do konce",
-            "Jsem připraven postavit se dočasné nepopulárnosti, pokud budu mít\n" +
-            "chtěné výsledky",
-            "Rychle vycítím, co bude fungovat v situacích, které dobře znám (při hře)",
-            "Umím nabídnout rozumné alternativní možnosti jednání"
+        t: "Jak můžeš být přínosem pro tým?", sq: [
+            "Rychle rozpoznávám a využívám nové příležitosti.",
+            "Dokážu efektivně spolupracovat s různými lidmi.",
+            "Jsem kreativní a přicházím s novými nápady.",
+            "Umím povzbudit ostatní, když vidím, že mohou přispět něčím cenným.",
+            "Mám schopnost dotahovat věci do konce.",
+            "Nebojím se dočasné nepopularity, pokud vede k dosažení dobrých výsledků.",
+            "Dokážu rychle vycítit, co bude fungovat v situacích, které dobře znám.",
+            "Umím nabídnout rozumné alternativy při rozhodování."
         ]
     },
     {
-        t: "Tvoje nedostatky v teamové práci můžou být způsobeny", sq: [
-            "Necítím se dobře, pokud porady nejsou dobře vedené (zorganizované)",
-            "Mám sklon respektovat ty, jejichž názor nebyl prosazovány, i když byl\n" +
-            "cenný",
-            "Mám sklon k mnohomluvnosti, jakmile se v týmu začne mluvit o nových\n" +
-            "nápadech",
-            "Můj rozum mi říká „Ne!“, když chci do věci okamžitě a s nadšením\n" +
-            "s kolegy jít",
-            "Někdy jsem přísný, když je třeba rychle něco dodělat",
-            "Dělá mi potíže vést druhé, což je způsobeno tím, že jsem příliš citlivý na\n" +
-            "to jaká je v týmu atmosféra",
-            "Nechávám se unést vlastními myšlenkami a ztrácím kontakt s tím co se\n" +
-            "v týmu děje",
-            "Mí spoluhráči si myslí, že jsem úzkostlivý na detaily, a že mám strach, že\n" +
-            "se věci nebudou dařit"
+        t: "Co ti může komplikovat týmovou spolupráci?", sq: [
+            "Necítím se dobře, když porady nejsou dobře organizované.",
+            "Mám sklon podporovat i názory, které nebyly prosazeny, i když jsou cenné.",
+            "Někdy příliš mluvím, když se v týmu diskutuje o nových nápadech.",
+            "Můj rozum mě někdy brzdí, i když bych chtěl s nadšením jít do akce.",
+            "Občas jsem příliš přísný, když je potřeba něco rychle dokončit.",
+            "Mám problém vést ostatní, protože jsem citlivý na atmosféru v týmu.",
+            "Občas se nechám unést vlastními myšlenkami a ztrácím přehled o dění v týmu.",
+            "Spoluhráči mě někdy vnímají jako příliš úzkostlivého, když jde o detaily."
         ]
     },
     {
-        t: "Když spolupracuješ společně s druhými", sq: [
-            "Mám schopnost na ostatní působit bez toho, že bych na ně vyvíjel nátlak",
-            "Jsem soustředěný a nedělám chyby z nepozornosti (nejsem roztržitý)",
-            "Jsem připraven naléhat na to, abych měl jistotu, že porada (v kabině)\n" +
-            "nebude ztrátou času nebo že ztratíme ze zřetele hlavní cíl (výhra, atd.)",
-            "Mohou se na mě spolehnout, že přijdu s originálním řešením, návrhem",
-            "Jsem vždy připraven bránit dobrý návrh",
-            "Velice rád hledám nové informace a myšlenky",
-            "Druzí si cení mé schopnosti posuzovat věci s chladnou hlavou",
-            "Je na mě spolehnutí, že dohlédnu na to, aby se nejdůležitější úkoly\n" +
-            "provedli"
+        t: "Jak se chováš při spolupráci s ostatními?", sq: [
+            "Umím na ostatní působit pozitivně, aniž bych na ně vyvíjel nátlak.",
+            "Jsem soustředěný a vyhýbám se chybám z nepozornosti.",
+            "Dbám na to, aby porady nebyly ztrátou času a tým se držel hlavního cíle.",
+            "Lidé se na mě mohou spolehnout, že přinesu originální řešení.",
+            "Neváhám se postavit za dobrý návrh.",
+            "Rád hledám nové informace a přístupy.",
+            "Ostatní si cení mé schopnosti zachovat chladnou hlavu při rozhodování.",
+            "Pečlivě dohlížím na to, aby se klíčové úkoly dokončily."
         ]
     },
     {
-        t: "Tvůj přístup k teamové spolupráci spočívá v tom, že", sq: [
-            "Mám zájem poznat své spoluhráče",
-            "Nestydím se mít námitky vůči názorům druhých nebo sám souhlasit\n" +
-            "s názorem menšiny (malá skupina)",
-            "Dokáži nalézt důvod k odmítnutí nezdravých, škodlivých návrhů\n" +
-            "(nápadů)",
-            "Mám talent na to zabezpečit fungování věci jakmile začne být plán\n" +
-            "realizován",
-            "Mám sklon přicházet s neobvyklým a vyhýbat se běžnému",
-            "Při jakékoliv provádění cvičení mám sklon k perfekcionismu",
-            "Jsem ochoten využít kontakty mimo náš tým",
-            "Zajímají mne všechny názory, ale ve správné chvíli neváhám udělat\n" +
-            "rozhodnutí (jsem rozhodný)"
+        t: "Jaký je tvůj přístup k týmové spolupráci?", sq: [
+            "Zajímám se o své spoluhráče a chci je lépe poznat.",
+            "Nebojím se zpochybnit názory druhých nebo podpořit menšinový názor.",
+            "Dokážu rozpoznat a odmítnout nezdravé či škodlivé návrhy.",
+            "Jsem schopný zajistit hladký průběh realizace plánu.",
+            "Mám sklon přicházet s neobvyklými řešeními a vyhýbat se stereotypům.",
+            "Mám sklony k perfekcionismu při plnění úkolů.",
+            "Využívám své kontakty mimo tým, pokud to může pomoci.",
+            "Zajímám se o různé názory, ale ve správnou chvíli umím rozhodnout."
         ]
     },
     {
-        t: "Co tě uspokojuje při provádění úkonů?", sq: [
-            "Rád přemýšlím a rozebírám situaci a zvažuji všechny možnosti",
-            "Zajímám se o nalezení praktických řešení situací vzniklých v průběhu\n" +
-            "cvičení",
-            "Jsem rád, když cítím, že podporuji dobré vztahy mezi spoluhráči",
-            "Mám velký vliv na rozhodování",
-            "Setkávám se spoluhráči, kteří mají co nabídnout",
-            "Dokážu ostatní přimět, aby souhlasili s nezbytnými postupy",
-            "Mám pocit, že dokáži věnovat všechnu svou pozornost úkolu",
-            "S radostí nalézám situace, které rozšiřují mou představivost"
+        t: "Co tě nejvíce motivuje při plnění úkolů?", sq: [
+            "Rád přemýšlím nad situací a zvažuji všechny možnosti.",
+            "Baví mě hledat praktická řešení vzniklých problémů.",
+            "Těší mě, když podporuji dobré vztahy v týmu.",
+            "Mám vliv na rozhodování.",
+            "Rád spolupracuji s lidmi, kteří mohou týmu něco nabídnout.",
+            "Umím ostatní přesvědčit o nutných krocích.",
+            "Dovedu se naplno soustředit na úkol.",
+            "Rád hledám nové podněty, které rozvíjejí mou představivost."
         ]
     },
     {
-        t: "Když máš provést úkol s neznámými kolegy, co uděláš?", sq: [
-            "Uchýlím se do ústraní, abych našel řešení situace",
-            "Byl bych připraven pracovat s člověkem, který dokáže řešit, i obtížný\n" +
-            "úkol",
-            "Rozdělil bych úkoly mezi členy týmu podle jejich možností a schopností",
-            "Stihl bych termín",
-            "Zachoval bych si chladnou hlavu a udržel schopnost uvažovat rozumně",
-            "Tlak z okolí bych nevnímal, soustředil bych se na účel",
-            "Pokud by skupina nedělala pokrok, přezval bych vedení",
-            "Otevřel bych diskusi ke stimulaci vzniku a pohybu nových myšlenek\n" +
-            "(Měl bych zájem o diskusi)"
+        t: "Jak se zachováš, když máš pracovat s neznámými lidmi?", sq: [
+            "Nejprve se stáhnu do ústraní a promyslím si řešení.",
+            "Budu se snažit spolupracovat s lidmi, kteří zvládnou i náročné úkoly.",
+            "Rozdělím práci podle schopností členů týmu.",
+            "Dodržím stanovený termín.",
+            "Zachovám klid a budu uvažovat racionálně.",
+            "Nenechám se rozptýlit tlakem okolí a soustředím se na cíl.",
+            "Pokud se tým neposouvá, převezmu vedení.",
+            "Podpořím diskuzi, aby vznikaly nové nápady a pohledy."
         ]
     },
     {
-        t: "Co je tvým problémem?", sq: [
-            "Jsem netrpělivý, když někdo proces brzdí a zdržuje",
-            "Mohu být kritizován, protože nedokáži správně situaci vyhodnotit",
-            "Moje snaha o náležité dokončení práce může zabrzdit další věci",
-            "Brzy se začnu nudit a spoléhám, že jiní ve mně zažehnou jiskru",
-            "Těžko dokáži začít něco dělat při nejasných cílech",
-            "Objasnění složitých problémů mi někdy dělá potíže",
-            "Snažím se potlačit názory ostatních, protože svůj považuji za lepší",
-            "Nerad se pouštím do diskusí, když mám proti sobě silnou protistranu"
+        t: "S čím míváš v týmu problémy?", sq: [
+            "Jsem netrpělivý, když někdo zbytečně zpomaluje proces.",
+            "Mohu být kritizován za špatné vyhodnocení situace.",
+            "Můj důraz na dokonalé dokončení práce může brzdit další kroky.",
+            "Rychle se začnu nudit a čekám, že mě někdo motivuje.",
+            "Mám problém začít, když nejsou jasně stanovené cíle.",
+            "Občas se mi nedaří srozumitelně vysvětlit složité problémy.",
+            "Někdy se snažím potlačit názory ostatních, protože věřím, že ten můj je lepší.",
+            "Vyhýbám se diskuzím, když mám proti sobě silného oponenta."
         ]
     }
 ];
